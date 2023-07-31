@@ -1,0 +1,32 @@
+@import "../../../../../../scss/base/variables";
+
+:host{
+    form{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+
+        &,
+        label,
+        input{
+            width: 95%;
+        }
+
+        label{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-bottom: 1px solid $cinza;
+        }
+
+        input{
+            height: 50px;
+            border: none;
+            font-size: 22px;
+            &::placeholder{
+                color: $cinza;
+            }
+        }
+    }
+}
